@@ -1,0 +1,70 @@
+[
+  {
+    "id": 1,
+    "name": {
+      "first": "Sara",
+      "last": "shaffer"
+    },
+    "role": "Manager",
+    "email": "saraShaffer@gmail.com",
+    "phone": 6124678907,
+    "dob": "01/10/1985"
+  },
+  {
+    "id": 2,
+    "name": {
+      "first": "Kierra",
+      "last": "Gentry"
+    },
+    "role": "Engineer",
+    "email": "keirraGentry@gmail.com",
+    "phone": 6124645677,
+    "dob": "02/05/1989"
+  },
+  {
+    "id": 3,
+    "name": {
+      "first": "Thomas",
+      "last": "Crane"
+    },
+    "role": "Senior Manager",
+    "email": "thomasCrane@gmail.com",
+    "phone": 9244671248,
+    "dob": "01/12/1978"
+  },
+  {
+    "id": 4,
+    "name": {
+      "first": "Miranda",
+      "last": "Cantrell"
+    },
+    "role": "Senior Engineer",
+    "email": "mirandaCantrell@gmail.com",
+    "phone": 2345678976,
+    "dob": "05/30/1981"
+  },
+
+  {
+    "id": 5,
+    "name": {
+      "first": "Mike",
+      "last": "Anderson"
+    },
+    "role": "Lead Engineer",
+    "email": "mikeAnderson@gmail.com",
+    "phone": 6123407890,
+    "dob": "03/13/1970"
+  },
+
+  {
+    "id": 5,
+    "name": {
+      "first": "Sathya",
+      "last": "Guru"
+    },
+    "role": "Intern",
+    "email": "sathyaGuru@gmail.com",
+    "phone": 6124817999,
+    "dob": "06/12/1988"
+  }
+]
