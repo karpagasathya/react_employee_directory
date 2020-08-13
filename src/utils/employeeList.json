@@ -85,5 +85,18 @@
     "phone": 4293456712,
     "dob": "01/12/1987",
     "image":"images/image6.png"
+  },
+
+  {
+    "id": 8,
+    "name": {
+      "first": "Dishitha",
+      "last": "Gurupandi"
+    },
+    "role": "Intern",
+    "email": "gurupandi@gmail.com",
+    "phone": 9236789025,
+    "dob": "05/23/1990",
+    "image": "images/image7.jpg"
   }
 ]

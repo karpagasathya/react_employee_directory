@@ -8,7 +8,7 @@ function EmployeeTable(props) {
       <div className="row d-flex justify-content-center">
         <div className="col-10">
           <table className="table table-striped table-responsive-lg">
-            <thead>{<EmployeeTableHeader handleSort={props.handleSort} sortByCategory={props.sortByCategory} />}</thead>
+            <thead className="thead-dark">{<EmployeeTableHeader handleSort={props.handleSort} sortByCategory={props.sortByCategory} />}</thead>
             <tbody>
               {props.employees.map((employee) => (
                 <EmployeeTableRow image={employee.image} name={employee.name.first + " " + employee.name.last} role={employee.role} phone={employee.phone} email={employee.email} dob={employee.dob} />
