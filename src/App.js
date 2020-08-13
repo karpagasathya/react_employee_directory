@@ -2,15 +2,12 @@ import React from 'react';
 // import logo from './logo.svg';
 import './App.css';
 import SearchResultContainer from "./components/SearchResult/SearchResultContainer";
-import Navbar from './components/Navbar';
-// import SearchForm from './components/SearchForm';
-
-
+import Header from "./components/Header";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Header />
       <SearchResultContainer />
     </div>
   );

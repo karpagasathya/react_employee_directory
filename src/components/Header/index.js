@@ -1,7 +1,7 @@
 import React from "react";
 import "./style.css";
 
-function Navbar() {
+function Header() {
     return (
       <div className="header-container">
         <div className="row d-flex justify-content-center">
@@ -15,4 +15,4 @@ function Navbar() {
     );
 }
 
-export default Navbar; 
+export default Header; 
