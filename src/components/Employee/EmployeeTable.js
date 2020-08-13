@@ -11,7 +11,7 @@ function EmployeeTable(props) {
             <thead>{<EmployeeTableHeader handleSort={props.handleSort} sortByCategory={props.sortByCategory} />}</thead>
             <tbody>
               {props.employees.map((employee) => (
-                <EmployeeTableRow name={employee.name.first + " " + employee.name.last} role={employee.role} phone={employee.phone} email={employee.email} dob={employee.dob} />
+                <EmployeeTableRow image={employee.image} name={employee.name.first + " " + employee.name.last} role={employee.role} phone={employee.phone} email={employee.email} dob={employee.dob} />
               ))}
             </tbody>
           </table>
