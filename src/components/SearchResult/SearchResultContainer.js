@@ -2,14 +2,12 @@ import React, { Component } from "react";
 import EmployeeTable from "../Employee/EmployeeTable";
 import EmployeeList from "../../utils/employeeList.json";
 import SearchForm from "../SearchForm";
-import Moment from "moment";
 
 class SearchResultContainer extends Component {
-
   state = {
     employees: EmployeeList,
     filteredEmployees: EmployeeList,
-    sortMethod: "asc"
+    sortMethod: "asc",
   };
 
   handleInputChange = (event) => {
@@ -24,42 +22,35 @@ class SearchResultContainer extends Component {
   };
 
   handleSort = (event) => {
-
     const sortByCategory = event.target.getAttribute("id");
 
     if (this.state.sortMethod === "asc") {
       let sortedEmployees = this.state.filteredEmployees.sort((a, b) => {
-                switch (sortByCategory) {
-                  case "name":
-                    return a.name.first > b.name.first ? 1 : -1;
-                  case "dob":
-                    return Moment(b.dob.date).format("L") - Moment(a.dob.date).format("L") ? 1 : -1;
-                  default:
-                    return a[sortByCategory] > b[sortByCategory] ? 1 : -1;
-                }
+        switch (sortByCategory) {
+          case "name":
+            return a.name.first > b.name.first ? 1 : -1;
+          default:
+            return a[sortByCategory] > b[sortByCategory] ? 1 : -1;
+        }
       });
       this.setState({
         filteredEmployees: sortedEmployees,
-        sortMethod: "desc"
+        sortMethod: "desc",
       });
-
     } else {
       let sortedEmployees = this.state.filteredEmployees.sort((a, b) => {
         switch (sortByCategory) {
           case "name":
             return a.name.first < b.name.first ? 1 : -1;
-          case "dob":
-            return Moment(b.dob.date).format("L") - Moment(a.dob.date).format("L") ? 1 : -1;
           default:
             return a[sortByCategory] < b[sortByCategory] ? 1 : -1;
         }
       });
       this.setState({
         filteredEmployees: sortedEmployees,
-        sortMethod: "asc"
+        sortMethod: "asc",
       });
     }
-
   };
 
   render() {
