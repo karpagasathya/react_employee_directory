@@ -47,3 +47,10 @@ npm start
 ## License
 
 [MIT](public/license) license
+
+## Screenshots
+
+![](public/images/screenshot.png)
+
+
+![](public/images/employee.gif)
