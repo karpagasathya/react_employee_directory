@@ -9,6 +9,7 @@ function Header() {
             <h1>
               <strong>Employee Directory</strong>
             </h1>
+            <h6>Click on the sort icon or filter using search box to narrow your results.</h6>
           </div>
         </div>
       </div>
