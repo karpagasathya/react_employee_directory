@@ -8,6 +8,7 @@ This application allows the user to view their employee directory, and have easy
 * HTML
 * CSS
 * JavaScript
+* Node.js
 * React
 
 ## Table of Contents
@@ -18,6 +19,8 @@ This application allows the user to view their employee directory, and have easy
 4. [License](#License)
 
 ## Description
+
+This Application allows the user quick access to employee information, they are able to sort employees in ascending or descending order in each of the following categories: name,role, phone number, email. This UI designed using react that breaks UI into components, manage component state and respond to user events.
 
 ## Installation
 
@@ -35,8 +38,12 @@ npm install
 ```
 npm start 
 ```
-* Another way to run this App is to, Navigate to [Heroku site]() and get started to use this Application.
+* Another way to run this App is to, Navigate to [Heroku site](https://immense-dusk-32798.herokuapp.com/) and get started to use this Application.
 
 * In order to filter employees by name, type a name into the search bar.
 * In order to sort the employee list by name, email, phone number, or DOB, click on that sort icon near the table header.
 * Click on the icon again to switch the sorting order.
+
+## License
+
+[MIT](public/license) license
