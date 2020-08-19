@@ -18,6 +18,7 @@ class SearchResultContainer extends Component {
       return employeeName.includes(event.target.value.toLowerCase());
     });
 
+    // We use the setState method to update a component's state
     this.setState({
       filteredEmployees: filteredEmployeesSeed,
     });
@@ -56,6 +57,7 @@ class SearchResultContainer extends Component {
     }
   };
 
+  // This render method returns the Employee container that should be rendered
   render() {
     return (
       <div className="text-center">

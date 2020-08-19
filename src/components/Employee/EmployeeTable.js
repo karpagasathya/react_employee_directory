@@ -2,6 +2,7 @@ import React from "react";
 import EmployeeTableHeader from "./EmployeeTableHeader";
 import EmployeeTableRow from "./EmployeeTableRow";
 
+// Map over employees and render a EmployeeTableRow component for each employee object
 function EmployeeTable(props) {
   return (
     <div className="container-fluid">
