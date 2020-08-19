@@ -1,30 +1,33 @@
 import React, { Component } from "react";
 import EmployeeTable from "../Employee/EmployeeTable";
-import EmployeeList from "../../utils/employeeList.json";
+import EmployeesSeed from "../../utils/employeeList.json";
 import SearchForm from "../SearchForm";
 
 class SearchResultContainer extends Component {
+  // Populating Components initial state with employees seeds from employeeList data
   state = {
-    employees: EmployeeList,
-    filteredEmployees: EmployeeList,
-    sortMethod: "asc",
+    seed: EmployeesSeed,
+    filteredEmployees: EmployeesSeed,
+    sortOrder: "asc",
   };
 
+  // filter employees by name as user types
   handleInputChange = (event) => {
-    let filteredSeeds = this.state.employees.filter((employee) => {
+    let filteredEmployeesSeed = this.state.seed.filter((employee) => {
       let employeeName = `${employee.name.first.toLowerCase()} ${employee.name.last.toLowerCase()}`;
       return employeeName.includes(event.target.value.toLowerCase());
     });
 
     this.setState({
-      filteredEmployees: filteredSeeds,
+      filteredEmployees: filteredEmployeesSeed,
     });
   };
 
+  // Sort the filteredEmployees result  in ascending or descending order based on the table header category that is clicked by user
   handleSort = (event) => {
     const sortByCategory = event.target.getAttribute("id");
 
-    if (this.state.sortMethod === "asc") {
+    if (this.state.sortOrder === "asc") {
       let sortedEmployees = this.state.filteredEmployees.sort((a, b) => {
         switch (sortByCategory) {
           case "name":
@@ -35,7 +38,7 @@ class SearchResultContainer extends Component {
       });
       this.setState({
         filteredEmployees: sortedEmployees,
-        sortMethod: "desc",
+        sortOrder: "desc",
       });
     } else {
       let sortedEmployees = this.state.filteredEmployees.sort((a, b) => {
@@ -48,7 +51,7 @@ class SearchResultContainer extends Component {
       });
       this.setState({
         filteredEmployees: sortedEmployees,
-        sortMethod: "asc",
+        sortOrder: "asc",
       });
     }
   };
